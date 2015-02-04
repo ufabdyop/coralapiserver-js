@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project name="docs" default="build" basedir=".">
+    <tstamp>
+            <format property="start.time" pattern="yyyy-MM-dd hh_mm_ss" />
+    </tstamp>
+  <target name="build">
+    <exec executable="bash" dir=".">
+      <arg value="-c"/>
+      <arg value="cat parts/{header.js,index.html,footer.js} > index.js"/>
+    </exec>
+    <exec executable="bash" dir=".">
+      <arg value="-c"/>
+      <arg value="perl -i -pe 's!SERVERNAMEANDPORT!&lt;script&gt;document.write(apiUrl);&lt;/script&gt;!g' index.js"/>
+    </exec>
+  </target>
+</project>
