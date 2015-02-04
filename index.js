@@ -7,7 +7,7 @@ function heredoc (f) {
 var txt = heredoc(function()
 {/*
 <script>
-  var apiUrl = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/';
+  var apiUrl = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port ;
 </script>
 <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 <h3>Version</h3>
