@@ -30,8 +30,8 @@ var txt = heredoc(function()
 <script>
   $.ajax({
     url: apiUrl + "/version",
-    type: "GET",
-  }).done(function(data) {
+    type: "GET"
+  }).success(function(jqXHR, data) {
     alert(data);
   });
 </script>
