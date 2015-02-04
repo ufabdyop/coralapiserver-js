@@ -28,6 +28,7 @@ var txt = heredoc(function()
 </code>
 
 <script>
+var getVersion = function() {
   $.ajax({
     url: apiUrl + "/version",
     type: "GET"
@@ -35,6 +36,7 @@ var txt = heredoc(function()
     console.log(data);
     alert(data);
   });
+};
 </script>
 
 <h3>Authentication</h3>
