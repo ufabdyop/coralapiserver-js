@@ -32,6 +32,7 @@ var txt = heredoc(function()
     url: apiUrl + "/version",
     type: "GET"
   }).success(function(jqXHR, data) {
+    console.log(data);
     alert(data);
   });
 </script>
