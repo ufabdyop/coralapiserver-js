@@ -6,9 +6,11 @@ function heredoc (f) {
 
 var txt = heredoc(function()
 {/*
-A test of horrible
-Multi-line strings!
 <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+<h3>Authentication</h3>
+<p>There are a few ways to authenticate to coral api server.  The simplest is a basic http auth with 
+coral credentials.</p>
+
 */});
 
 document.write(txt);
