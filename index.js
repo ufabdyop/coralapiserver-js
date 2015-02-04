@@ -10,7 +10,7 @@ var txt = heredoc(function()
 <h3>Version</h3>
 <p>The simplest API call is to ask the API what version it is running.  With curl, this is done as:
 <br/>
-curl http://SERVERNAMEANDPORT/version
+<code>curl http://SERVERNAMEANDPORT/version</code>
 </p>
 
 <h3>Authentication</h3>
